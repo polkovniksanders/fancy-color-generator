@@ -7,4 +7,54 @@
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+}
+
+.col-wrapper {
+    display: flex;
+    width: 100vw;
+}
+
+.col {
+    width: 25%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col h2 {
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.col h2:hover {
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.col button {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.col button:hover {
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
